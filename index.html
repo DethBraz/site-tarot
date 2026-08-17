@@ -108,14 +108,31 @@
   <div id="stars-container" class="absolute inset-0 z-0 pointer-events-none"></div>
 
   <!-- Stained-glass rose window backdrop -->
-  <div class="absolute inset-0 z-0 flex items-center justify-center opacity-40 md:opacity-60">
+  <div id="rose-window-parallax" class="absolute inset-0 z-0 flex items-center justify-center opacity-40 md:opacity-60">
     <img src="assets/img/rose-window.svg" alt="" class="rose-window-spin w-[130vw] max-w-[900px] md:w-[70vw]" width="600" height="600"/>
   </div>
   <div class="absolute inset-0 z-0 bg-gradient-to-b from-ink via-ink/40 to-ink"></div>
 
-  <div class="relative z-10 text-center max-w-4xl">
+  <!-- Crosshair registration marks -->
+  <svg aria-hidden="true" class="hidden sm:block absolute top-8 left-6 w-4 h-4 text-gold/40" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1"><path d="M8 1v5M8 10v5M1 8h5M10 8h5"/></svg>
+  <svg aria-hidden="true" class="hidden sm:block absolute top-8 right-6 w-4 h-4 text-gold/40" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1"><path d="M8 1v5M8 10v5M1 8h5M10 8h5"/></svg>
+  <svg aria-hidden="true" class="hidden sm:block absolute bottom-8 left-6 w-4 h-4 text-gold/40" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1"><path d="M8 1v5M8 10v5M1 8h5M10 8h5"/></svg>
+  <svg aria-hidden="true" class="hidden sm:block absolute bottom-8 right-6 w-4 h-4 text-gold/40" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1"><path d="M8 1v5M8 10v5M1 8h5M10 8h5"/></svg>
+
+  <!-- Floating tarot cards -->
+  <div aria-hidden="true" class="hidden lg:flex float-card float-card-a absolute left-[8%] top-[22%] w-24 h-36 opacity-25 items-center justify-center pointer-events-none">
+    <svg viewBox="0 0 24 24" class="w-8 h-8 text-gold" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M12 9 A9 9 0 1 0 12 23 A7 7 0 1 1 12 9 Z"/></svg>
+  </div>
+  <div aria-hidden="true" class="hidden lg:flex float-card float-card-b absolute right-[10%] top-[30%] w-24 h-36 opacity-20 items-center justify-center pointer-events-none">
+    <svg viewBox="0 0 24 24" class="w-8 h-8 text-gold" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="12" cy="12" r="9.2"/><path d="M12 4.5 14.1 9.6 19.6 10 15.5 13.5 16.8 19 12 16 7.2 19 8.5 13.5 4.4 10 9.9 9.6Z"/></svg>
+  </div>
+  <div aria-hidden="true" class="hidden xl:flex float-card float-card-c absolute right-[22%] bottom-[16%] w-20 h-28 opacity-15 items-center justify-center pointer-events-none">
+    <svg viewBox="0 0 24 24" class="w-6 h-6 text-gold" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M6 3h12l-1.3 8.2a5 5 0 01-9.4 0L6 3z"/><path d="M12 15v4M8.5 21h7"/></svg>
+  </div>
+
+  <div class="relative z-10 text-center max-w-5xl">
     <span class="font-headline text-gold tracking-[0.5em] text-[10px] mb-8 block">✦ O VÉU SE ABRE ✦</span>
-    <h1 class="font-display text-4xl md:text-7xl font-bold leading-tight mb-8 text-parchment drop-shadow-2xl">
+    <h1 class="font-display text-4xl md:text-7xl lg:text-8xl font-bold leading-tight lg:leading-[0.95] mb-8 text-parchment drop-shadow-2xl">
       Onde os Arcanos<br/>
       <span class="text-gold italic gold-glow">Sussurram</span> Teu Destino
     </h1>
@@ -138,8 +155,8 @@
 
 <!-- Sobre Mim Section -->
 <section id="sobre" class="py-28 px-6 max-w-6xl mx-auto relative">
-  <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-    <div>
+  <div class="reveal-group grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+    <div class="reveal">
       <span class="font-headline text-gold/80 text-[11px] tracking-[0.4em] uppercase block mb-6">[ O Guardião do Véu ]</span>
       <h2 class="font-display text-2xl md:text-4xl font-bold mb-8 leading-tight text-parchment">O Vidente<br/><span class="text-gold">por trás das Cartas</span></h2>
       <p class="font-body text-parchment-dim text-lg leading-relaxed mb-6">
@@ -167,7 +184,7 @@
         </div>
       </div>
     </div>
-    <div class="relative flex justify-center">
+    <div class="reveal relative flex justify-center">
       <div class="tarot-frame glass-panel p-10 text-center relative max-w-sm w-full">
         <svg class="frame-corner tl" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 4 L4 28 Q4 40 16 40 L40 40"/><circle cx="4" cy="4" r="2.5" fill="currentColor" stroke="none"/><path d="M12 4 Q28 4 28 20"/><circle cx="28" cy="20" r="1.8" fill="currentColor" stroke="none"/></svg>
         <svg class="frame-corner tr" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 4 L4 28 Q4 40 16 40 L40 40"/><circle cx="4" cy="4" r="2.5" fill="currentColor" stroke="none"/><path d="M12 4 Q28 4 28 20"/><circle cx="28" cy="20" r="1.8" fill="currentColor" stroke="none"/></svg>
@@ -197,8 +214,8 @@
     <h2 class="font-display text-2xl md:text-4xl font-bold text-parchment">Convide as Cartas<br class="md:hidden"/> para Sua Jornada</h2>
   </div>
   <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
-    <div class="lg:col-span-8">
-      <div class="mb-8">
+    <div class="reveal-group lg:col-span-8">
+      <div class="reveal mb-8">
         <span class="font-headline text-gold/85 text-[10px] tracking-[0.35em] uppercase block mb-3">Consultas Rápidas</span>
         <div class="space-y-3">
           <a href="https://wa.me/5589981509164?text=Olá!+Quero+uma+Pergunta+de+Sim+ou+Não+(R$2)" class="oracle-row flex justify-between items-center p-6 border border-gold/15 rounded-sm cursor-pointer">
@@ -225,7 +242,7 @@
         </div>
       </div>
 
-      <div class="mb-8">
+      <div class="reveal mb-8">
         <span class="font-headline text-gold/85 text-[10px] tracking-[0.35em] uppercase block mb-3">Pacotes de Perguntas</span>
         <div class="space-y-3">
           <a href="https://wa.me/5589981509164?text=Olá!+Quero+3+Perguntas+Objetivas+(R$12)" class="oracle-row flex justify-between items-center p-6 border border-gold/15 rounded-sm cursor-pointer">
@@ -252,7 +269,7 @@
         </div>
       </div>
 
-      <div>
+      <div class="reveal">
         <span class="font-headline text-gold/85 text-[10px] tracking-[0.35em] uppercase block mb-3">Leitura Completa</span>
         <a href="https://wa.me/5589981509164?text=Olá!+Tenho+interesse+na+Leitura+Mensal+(R$35)" class="oracle-row tarot-frame flex justify-between items-center p-6 bg-gold/5 cursor-pointer relative">
           <span class="absolute -top-3 right-6 font-headline text-[9px] tracking-[0.3em] uppercase text-ink-deep bg-gold px-3 py-1">Favorita das Estrelas</span>
@@ -264,8 +281,8 @@
         </a>
       </div>
     </div>
-    <div class="lg:col-span-4 flex flex-col gap-8">
-      <div class="tarot-frame glass-panel p-10 flex flex-col items-center text-center relative">
+    <div class="reveal-group lg:col-span-4 flex flex-col gap-8">
+      <div class="reveal tarot-frame glass-panel p-10 flex flex-col items-center text-center relative">
         <svg viewBox="0 0 24 24" class="w-14 h-14 text-gold mb-6 gold-glow" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="M12 2 4 6v6c0 5 3.4 8.4 8 10 4.6-1.6 8-5 8-10V6l-8-4Z"/><path d="M9 12l2 2 4-4"/></svg>
         <h3 class="font-display text-lg mb-4 tracking-widest uppercase text-parchment">Canal Sagrado</h3>
         <p class="font-body text-sm text-parchment-dim mb-8 leading-relaxed">
@@ -275,7 +292,7 @@
           Agendar via WhatsApp
         </a>
       </div>
-      <div class="p-8 bg-ink-deep/60 border-l-2 border-gold/50" id="contact">
+      <div class="reveal p-8 bg-ink-deep/60 border-l-2 border-gold/50" id="contact">
         <h4 class="font-headline text-gold/85 text-[10px] tracking-[0.4em] mb-4 uppercase">[ Como Chegar Até Mim ]</h4>
         <p class="font-body text-sm text-parchment-dim leading-relaxed">
           Todos os dias, com hora marcada.<br/>
@@ -294,8 +311,8 @@
     <span class="font-headline text-gold/80 text-[11px] tracking-[0.4em] uppercase block mb-4">[ Véus que se Desfazem ]</span>
     <h2 class="font-display text-2xl md:text-4xl font-bold text-parchment">Perguntas ao Oráculo</h2>
   </div>
-  <div class="space-y-2">
-    <div class="faq-item border border-gold/15 hover:border-gold/40 transition-all duration-300">
+  <div class="reveal-group space-y-2">
+    <div class="reveal faq-item border border-gold/15 hover:border-gold/40 transition-all duration-300">
       <button onclick="toggleFaq(this)" aria-expanded="false" class="w-full flex justify-between items-center p-6 text-left cursor-pointer">
         <span class="font-body text-lg text-parchment">Como funciona a consulta?</span>
         <span aria-hidden="true" class="text-gold text-xl transition-transform duration-300 faq-icon flex-shrink-0">+</span>
@@ -306,7 +323,7 @@
         </p>
       </div>
     </div>
-    <div class="faq-item border border-gold/15 hover:border-gold/40 transition-all duration-300">
+    <div class="reveal faq-item border border-gold/15 hover:border-gold/40 transition-all duration-300">
       <button onclick="toggleFaq(this)" aria-expanded="false" class="w-full flex justify-between items-center p-6 text-left cursor-pointer">
         <span class="font-body text-lg text-parchment">Quanto tempo demora para receber a leitura?</span>
         <span aria-hidden="true" class="text-gold text-xl transition-transform duration-300 faq-icon flex-shrink-0">+</span>
@@ -317,7 +334,7 @@
         </p>
       </div>
     </div>
-    <div class="faq-item border border-gold/15 hover:border-gold/40 transition-all duration-300">
+    <div class="reveal faq-item border border-gold/15 hover:border-gold/40 transition-all duration-300">
       <button onclick="toggleFaq(this)" aria-expanded="false" class="w-full flex justify-between items-center p-6 text-left cursor-pointer">
         <span class="font-body text-lg text-parchment">Como é feito o pagamento?</span>
         <span aria-hidden="true" class="text-gold text-xl transition-transform duration-300 faq-icon flex-shrink-0">+</span>
@@ -328,7 +345,7 @@
         </p>
       </div>
     </div>
-    <div class="faq-item border border-gold/15 hover:border-gold/40 transition-all duration-300">
+    <div class="reveal faq-item border border-gold/15 hover:border-gold/40 transition-all duration-300">
       <button onclick="toggleFaq(this)" aria-expanded="false" class="w-full flex justify-between items-center p-6 text-left cursor-pointer">
         <span class="font-body text-lg text-parchment">Meus dados ficam seguros?</span>
         <span aria-hidden="true" class="text-gold text-xl transition-transform duration-300 faq-icon flex-shrink-0">+</span>
@@ -339,7 +356,7 @@
         </p>
       </div>
     </div>
-    <div class="faq-item border border-gold/15 hover:border-gold/40 transition-all duration-300">
+    <div class="reveal faq-item border border-gold/15 hover:border-gold/40 transition-all duration-300">
       <button onclick="toggleFaq(this)" aria-expanded="false" class="w-full flex justify-between items-center p-6 text-left cursor-pointer">
         <span class="font-body text-lg text-parchment">Posso fazer qualquer tipo de pergunta?</span>
         <span aria-hidden="true" class="text-gold text-xl transition-transform duration-300 faq-icon flex-shrink-0">+</span>
@@ -390,6 +407,80 @@
     { threshold: 0.15 }
   );
   heroObserver.observe(heroSection);
+
+  // ── Smooth scroll + hero parallax ──
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const isFinePointer = window.matchMedia('(pointer: fine)').matches;
+  const useCustomScroll = isFinePointer && !prefersReducedMotion;
+  const roseParallax = document.getElementById('rose-window-parallax');
+  const maxScroll = () => document.documentElement.scrollHeight - window.innerHeight;
+
+  function updateParallax() {
+    if (prefersReducedMotion || !roseParallax) return;
+    const heroRect = heroSection.getBoundingClientRect();
+    const progress = Math.min(Math.max(-heroRect.top / heroRect.height, 0), 1);
+    roseParallax.style.transform = `translateY(${progress * 60}px)`;
+  }
+
+  let currentScroll = window.scrollY;
+  let targetScroll = window.scrollY;
+
+  if (useCustomScroll) {
+    window.addEventListener('wheel', (e) => {
+      e.preventDefault();
+      targetScroll = Math.max(0, Math.min(targetScroll + e.deltaY, maxScroll()));
+    }, { passive: false });
+
+    window.addEventListener('scroll', () => {
+      if (Math.abs(window.scrollY - currentScroll) > 2) {
+        currentScroll = window.scrollY;
+        targetScroll = window.scrollY;
+      }
+    }, { passive: true });
+
+    (function raf() {
+      currentScroll += (targetScroll - currentScroll) * 0.12;
+      if (Math.abs(targetScroll - currentScroll) < 0.5) currentScroll = targetScroll;
+      window.scrollTo({ top: currentScroll, left: 0, behavior: 'instant' });
+      updateParallax();
+      requestAnimationFrame(raf);
+    })();
+  } else {
+    window.addEventListener('scroll', updateParallax, { passive: true });
+    updateParallax();
+  }
+
+  // ── Anchor links: own the scroll destination instead of fighting native jump ──
+  document.querySelectorAll('a[href^="#"]').forEach((link) => {
+    link.addEventListener('click', (e) => {
+      const id = link.getAttribute('href').slice(1);
+      const targetEl = document.getElementById(id);
+      if (!targetEl) return;
+      e.preventDefault();
+      const navOffset = id === 'top' ? 0 : 80;
+      const dest = Math.max(0, Math.min(targetEl.getBoundingClientRect().top + window.scrollY - navOffset, maxScroll()));
+      if (useCustomScroll) {
+        targetScroll = dest;
+      } else {
+        window.scrollTo({ top: dest, behavior: prefersReducedMotion ? 'instant' : 'smooth' });
+      }
+      history.pushState(null, '', `#${id}`);
+    });
+  });
+
+  // ── Scroll reveal ──
+  const revealObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('revealed');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.15, rootMargin: '0px 0px -60px 0px' }
+  );
+  document.querySelectorAll('.reveal').forEach((el) => revealObserver.observe(el));
 
   // ── Mobile Menu ──
   const hamburger = document.getElementById('hamburger');
