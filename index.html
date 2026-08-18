@@ -1,585 +1,699 @@
 <!DOCTYPE html>
-<html class="dark scroll-smooth" lang="pt-BR">
+<html lang="pt-BR">
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>DEUSDETH TAROT | Insights Ciber-Místicos</title>
+<title>DEUSDETH TAROT | Leituras diretas, sem enrolação</title>
 
-<!-- SEO Meta Tags -->
-<meta name="description" content="Consultas de Tarot precisas e profundas com DEUSDETH. Leituras analíticas para revelar insights da sua jornada. Atendimento via WhatsApp com preços acessíveis."/>
-<meta name="keywords" content="tarot, consulta tarot, leitura tarot, tarot online, tarot whatsapp, arcanos"/>
+<meta name="description" content="Consultas de Tarot com DEUSDETH: leituras diretas e objetivas para amor, trabalho e decisões de vida. Atendimento via WhatsApp, pagamento por PIX, a partir de R$2."/>
+<meta name="keywords" content="tarot, consulta tarot, leitura tarot, tarot online, tarot whatsapp, arcanos, tarot piauí"/>
 <meta name="author" content="DEUSDETH TAROT"/>
 
-<!-- Open Graph (WhatsApp / redes sociais) -->
-<meta property="og:title" content="DEUSDETH TAROT | Insights Ciber-Místicos"/>
-<meta property="og:description" content="Consultas de Tarot precisas e profundas. Atendimento via WhatsApp. Preços a partir de R$2."/>
+<meta property="og:title" content="DEUSDETH TAROT | Leituras diretas, sem enrolação"/>
+<meta property="og:description" content="Consultas de Tarot objetivas via WhatsApp. Pagamento por PIX, a partir de R$2."/>
 <meta property="og:type" content="website"/>
-<meta property="og:url" content="https://deusdeth.com.br"/>
-<meta property="og:image" content="https://lh3.googleusercontent.com/aida-public/AB6AXuBFSp0krgWqni7-rchbsSzNdBAk1gklg5EpTO75ggfc6x5ChouztBQiZ3memO78h29fG4tZ7tbeovakoX_1FRnC1wCJQajz02OnJjlL32qJ4MlFXTEIFB8IgjwhdFbYKhZEPWDdhdJB2yfLybtZKDWzT94ud_DqNXvTS7vAF2dySCp9neh3BAma8BKEX1Gwa0SGr_448ds9flyHNXGCaLRpICw6ukcSg6k0bB1gmTjwN9YTxIctbFjfC1lpyQC12Mk3Ez4qaR2NMQA"/>
+<meta property="og:url" content="https://site-tarot.vercel.app"/>
+<meta property="og:image" content="/carta-og.png"/>
 
-<!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:title" content="DEUSDETH TAROT | Insights Ciber-Místicos"/>
-<meta name="twitter:description" content="Consultas de Tarot precisas e profundas. Atendimento via WhatsApp."/>
+<meta name="twitter:title" content="DEUSDETH TAROT | Leituras diretas, sem enrolação"/>
+<meta name="twitter:description" content="Consultas de Tarot objetivas via WhatsApp. Pagamento por PIX, a partir de R$2."/>
 
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
-  tailwind.config = {
-    darkMode: "class",
-    theme: {
-      extend: {
-        colors: {
-          "on-background": "#ffffff",
-          "inverse-on-surface": "#555555",
-          "on-primary-fixed": "#004348",
-          "on-error-container": "#ffa8a3",
-          "on-secondary-fixed-variant": "#535a6b",
-          "on-secondary-fixed": "#373d4e",
-          "outline": "#757575",
-          "background": "#080808",
-          "error-container": "#9f0519",
-          "surface-container-low": "#111111",
-          "on-tertiary": "#002b5e",
-          "error": "#ff716c",
-          "primary-container": "#5eacb5",
-          "surface-container-highest": "#222222",
-          "on-tertiary-fixed": "#001738",
-          "secondary-fixed-dim": "#cbd1e6",
-          "on-primary-fixed-variant": "#006269",
-          "tertiary-fixed-dim": "#6da3ff",
-          "on-primary-container": "#00272b",
-          "secondary-fixed": "#d9dff5",
-          "surface-dim": "#080808",
-          "primary-fixed-dim": "#8edbe4",
-          "surface-variant": "#222222",
-          "tertiary-dim": "#639dfd",
-          "surface-tint": "#9ceaf2",
-          "primary-dim": "#8edbe4",
-          "on-surface-variant": "#ababab",
-          "on-tertiary-fixed-variant": "#003876",
-          "on-secondary-container": "#c9d0e5",
-          "secondary-dim": "#cbd1e6",
-          "secondary": "#d9dff5",
-          "on-primary": "#00575e",
-          "outline-variant": "#333333",
-          "secondary-container": "#404758",
-          "on-error": "#490006",
-          "inverse-primary": "#046971",
-          "surface": "#080808",
-          "on-secondary": "#495061",
-          "surface-bright": "#2c2c2c",
-          "primary": "#9ceaf2",
-          "on-surface": "#ffffff",
-          "inverse-surface": "#f9f9f9",
-          "tertiary-container": "#639dfd",
-          "surface-container-high": "#1a1a1a",
-          "surface-container-lowest": "#000000",
-          "tertiary": "#7cabff",
-          "on-tertiary-container": "#001f47",
-          "error-dim": "#d7383b",
-          "tertiary-fixed": "#86b1ff",
-          "primary-fixed": "#9ceaf2",
-          "surface-container": "#151515"
-        },
-        fontFamily: {
-          "headline": ["Space Grotesk"],
-          "body": ["Manrope"],
-          "label": ["Space Grotesk"]
-        },
-        borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
-      },
-    },
-  }
-</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+
 <style>
-  .material-symbols-outlined {
-    font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+  :root {
+    --ochre: #c7962a;
+    --ochre-deep: #a8781d;
+    --ochre-shadow: #8f6416;
+    --ink: #241608;
+    --ink-soft: #4a3620;
+    --parchment: #f2e7cb;
+    --parchment-dim: #e8daae;
+    --indigo: #263a63;
+    --crimson: #9c2b21;
+    --crimson-deep: #7c211a;
+    --gold-line: #8a5f1e;
+    --ease: cubic-bezier(0.16, 1, 0.3, 1);
   }
-  .glass-panel {
-    background: rgba(15, 15, 15, 0.6);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+
+  * { box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    margin: 0;
+    background: var(--ochre);
+    color: var(--ink);
+    font-family: 'Archivo', sans-serif;
+    position: relative;
+    overflow-x: hidden;
   }
-  .cyber-grid {
-    background-size: 50px 50px;
-    background-image: linear-gradient(to right, rgba(0, 224, 255, 0.05) 1px, transparent 1px),
-                      linear-gradient(to bottom, rgba(0, 224, 255, 0.05) 1px, transparent 1px);
+
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    background-image:
+      repeating-linear-gradient(45deg, rgba(36,22,8,0.05) 0, rgba(36,22,8,0.05) 1px, transparent 1px, transparent 10px),
+      repeating-linear-gradient(-45deg, rgba(255,255,255,0.04) 0, rgba(255,255,255,0.04) 1px, transparent 1px, transparent 10px);
   }
-  .ethereal-glow {
-    filter: drop-shadow(0 0 15px rgba(156, 234, 242, 0.4));
+
+  h1, h2, h3, .display {
+    font-family: 'Cormorant Garamond', serif;
+    margin: 0;
+    color: var(--ink);
   }
-  .card-float {
-    animation: float 6s ease-in-out infinite;
+
+  a { color: inherit; text-decoration: none; }
+
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 24px; position: relative; z-index: 1; }
+
+  .eyebrow {
+    font-family: 'Archivo', sans-serif;
+    font-weight: 600;
+    font-size: 11px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
   }
-  @keyframes float {
-    0%, 100% { transform: translateY(0) rotate(12deg); }
-    50% { transform: translateY(-20px) rotate(14deg); }
+
+  .numeral {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
+    color: var(--crimson);
   }
-  .card-float-reverse {
-    animation: float-rev 7s ease-in-out infinite;
+
+  /* ── Nav ─────────────────────────────── */
+  header.nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    background: var(--ochre-deep);
+    border-bottom: 2px solid var(--ink);
   }
-  @keyframes float-rev {
-    0%, 100% { transform: translateY(0) rotate(-6deg); }
-    50% { transform: translateY(-15px) rotate(-8deg); }
+  .nav-row {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 24px;
+    height: 76px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
-  .lotus-glow {
-    mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+  .brand {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 24px;
+    letter-spacing: 0.02em;
   }
-  /* Mobile menu */
+  .brand span {
+    display: block;
+    font-family: 'Archivo', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 9px;
+    letter-spacing: 0.35em;
+    color: var(--ink-soft);
+    margin-top: 1px;
+  }
+  .nav-links {
+    display: none;
+    align-items: center;
+    gap: 34px;
+  }
+  .nav-links a {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    padding-bottom: 3px;
+    border-bottom: 1px solid transparent;
+    transition: color .2s var(--ease), border-color .2s var(--ease);
+  }
+  .nav-links a:hover, .nav-links a:focus-visible { color: var(--crimson); border-color: var(--crimson); }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-family: 'Archivo', sans-serif;
+    font-weight: 700;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    padding: 13px 26px;
+    border: 2px solid var(--ink);
+    cursor: pointer;
+    transition: transform .2s var(--ease), box-shadow .2s var(--ease), background .2s var(--ease), color .2s var(--ease);
+  }
+  .btn:hover, .btn:focus-visible { transform: translateY(-2px); }
+  .btn-solid { background: var(--crimson); color: var(--parchment); border-color: var(--crimson-deep); }
+  .btn-solid:hover { background: var(--crimson-deep); }
+  .btn-line { background: transparent; color: var(--ink); }
+  .btn-line:hover { background: var(--ink); color: var(--ochre); }
+
+  .nav-cta { display: none; }
+
+  #hamburger {
+    background: none; border: none; cursor: pointer;
+    display: flex; flex-direction: column; gap: 5px; padding: 8px;
+    position: relative; z-index: 110;
+  }
+  .ham-line { width: 24px; height: 2px; background: var(--ink); transition: transform .3s var(--ease), opacity .3s var(--ease); transform-origin: center; }
+  #hamburger.open .ham-line:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  #hamburger.open .ham-line:nth-child(2) { opacity: 0; }
+  #hamburger.open .ham-line:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
   #mobile-menu {
-    transition: max-height 0.4s ease, opacity 0.4s ease;
-    max-height: 0;
-    opacity: 0;
-    overflow: hidden;
+    position: fixed; inset: 0; top: 76px;
+    background: var(--ochre);
+    z-index: 99;
+    display: flex; flex-direction: column; justify-content: center; gap: 4px;
+    padding: 0 32px;
+    opacity: 0; pointer-events: none;
+    transition: opacity .25s var(--ease);
   }
-  #mobile-menu.open {
-    max-height: 300px;
-    opacity: 1;
+  #mobile-menu.open { opacity: 1; pointer-events: auto; }
+  #mobile-menu a {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
+    font-size: 32px;
+    padding: 14px 0;
+    border-bottom: 1px dashed rgba(36,22,8,0.3);
   }
-  /* Hamburger animation */
-  .ham-line {
-    transition: all 0.3s ease;
-    transform-origin: center;
+  #mobile-menu .btn { margin-top: 24px; align-self: flex-start; }
+
+  @media (min-width: 860px) {
+    .nav-links { display: flex; }
+    .nav-cta { display: inline-flex; }
+    #hamburger { display: none; }
+    #mobile-menu { display: none; }
   }
-  #hamburger.open .ham-line:nth-child(1) { transform: translateY(6px) rotate(45deg); }
-  #hamburger.open .ham-line:nth-child(2) { opacity: 0; transform: scaleX(0); }
-  #hamburger.open .ham-line:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
-  /* Stars background */
-  .star {
+
+  /* ── Card frame (shared) ─────────────── */
+  .card-frame {
+    background: var(--parchment);
+    border: 3px solid var(--ink);
+    outline: 1px solid var(--gold-line);
+    outline-offset: -7px;
+    position: relative;
+  }
+  .card-frame::before, .card-frame::after,
+  .pip-tl, .pip-tr, .pip-bl, .pip-br { content: ''; }
+  .pip {
     position: absolute;
-    border-radius: 50%;
-    background: white;
-    animation: twinkle var(--duration) ease-in-out infinite;
+    width: 9px; height: 9px;
+    background: var(--crimson);
+    transform: rotate(45deg);
+  }
+  .pip-tl { top: 10px; left: 10px; }
+  .pip-tr { top: 10px; right: 10px; }
+  .pip-bl { bottom: 10px; left: 10px; }
+  .pip-br { bottom: 10px; right: 10px; }
+
+  /* ── Hero ────────────────────────────── */
+  .hero {
+    padding: 150px 24px 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+  }
+  .hero-card {
+    width: min(340px, 78vw);
+    padding: 26px 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 10px 10px 0 rgba(36,22,8,0.35);
     opacity: 0;
+    transform: translateY(-60px) rotate(-8deg) scale(0.92);
+    animation: deal 0.9s var(--ease) 0.15s forwards;
   }
-  @keyframes twinkle {
-    0%, 100% { opacity: 0; transform: scale(0.5); }
-    50% { opacity: var(--max-opacity); transform: scale(1); }
+  @keyframes deal {
+    to { opacity: 1; transform: translateY(0) rotate(-2.5deg) scale(1); }
   }
-  /* Testimonial card */
-  .testimonial-card {
-    background: linear-gradient(135deg, rgba(156,234,242,0.04) 0%, rgba(0,0,0,0) 100%);
+  .hero-card .numeral { font-size: 15px; align-self: flex-start; margin-left: 4px; }
+  .hero-card svg { width: 100%; height: auto; margin: 6px 0 4px; }
+  .hero-card .ribbon {
+    width: 100%;
+    border-top: 2px solid var(--ink);
+    padding: 10px 6px 14px;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 20px;
+    letter-spacing: 0.06em;
   }
+
+  .hero h1 {
+    margin-top: 42px;
+    font-size: clamp(2.2rem, 5vw, 3.6rem);
+    font-weight: 600;
+    line-height: 1.08;
+    letter-spacing: -0.01em;
+    max-width: 15ch;
+  }
+  .hero h1 em { color: var(--crimson); font-style: italic; }
+  .hero p {
+    margin-top: 22px;
+    max-width: 46ch;
+    font-size: 17px;
+    line-height: 1.6;
+    color: var(--ink-soft);
+    font-weight: 500;
+  }
+  .hero .price-note {
+    margin-top: 8px;
+    font-size: 14px;
+    color: var(--ink-soft);
+  }
+  .hero .price-note b { color: var(--crimson); }
+  .hero .actions { margin-top: 34px; display: flex; flex-wrap: wrap; gap: 16px; justify-content: center; }
+
+  /* ── Section shell ───────────────────── */
+  section { position: relative; z-index: 1; padding: 92px 0; }
+  .section-head { text-align: center; margin-bottom: 56px; }
+  .section-head .numeral { display: block; font-size: 15px; margin-bottom: 10px; }
+  .section-head h2 {
+    font-size: clamp(1.8rem, 3.6vw, 2.6rem);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+  }
+  .rule {
+    width: 120px; height: 3px;
+    background: var(--ink);
+    margin: 18px auto 0;
+    position: relative;
+  }
+  .rule::before {
+    content: '';
+    position: absolute; left: 50%; top: -4px;
+    width: 9px; height: 9px;
+    background: var(--crimson);
+    transform: translateX(-50%) rotate(45deg);
+  }
+
+  /* ── Sobre ───────────────────────────── */
+  .sobre-grid { display: grid; gap: 44px; align-items: center; }
+  .sobre-grid p { font-size: 16px; line-height: 1.7; color: var(--ink-soft); font-weight: 500; margin: 0 0 18px; }
+  .sobre-grid p:last-of-type { margin-bottom: 0; }
+  .traits { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 26px; }
+  .trait {
+    font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase;
+    border: 2px solid var(--ink); padding: 8px 14px; background: var(--parchment-dim);
+  }
+  .mago-card { padding: 40px 30px; text-align: center; }
+  .mago-card svg { width: 96px; height: 96px; margin-bottom: 18px; }
+  .mago-card h3 { font-size: 20px; font-weight: 600; margin-bottom: 18px; }
+  .checklist { list-style: none; margin: 0; padding: 0; text-align: left; display: inline-flex; flex-direction: column; gap: 10px; }
+  .checklist li { font-size: 14px; font-weight: 500; color: var(--ink-soft); display: flex; gap: 10px; align-items: baseline; }
+  .checklist li::before { content: '✦'; color: var(--crimson); font-size: 11px; }
+
+  @media (min-width: 860px) {
+    .sobre-grid { grid-template-columns: 1.15fr 0.85fr; }
+  }
+
+  /* ── Pricing ─────────────────────────── */
+  .pricing-shell { display: grid; gap: 40px; }
+  .price-list { display: flex; flex-direction: column; }
+  .price-row {
+    display: flex; justify-content: space-between; align-items: center; gap: 16px;
+    padding: 20px 6px;
+    border-bottom: 1px dashed rgba(36,22,8,0.35);
+    transition: padding-left .2s var(--ease), border-color .2s var(--ease);
+  }
+  .price-row:hover, .price-row:focus-visible { padding-left: 14px; border-color: var(--crimson); }
+  .price-row .name { font-family: 'Cormorant Garamond', serif; font-size: 19px; font-weight: 600; }
+  .price-row .desc { display: block; font-size: 10px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-soft); margin-top: 3px; }
+  .price-row .amount { font-family: 'Cormorant Garamond', serif; font-size: 24px; font-weight: 700; color: var(--crimson); white-space: nowrap; }
+  .price-row.featured { background: var(--parchment-dim); border: 2px solid var(--ink); padding: 20px 16px; margin-top: 14px; position: relative; }
+  .seal {
+    position: absolute; top: -12px; right: 18px;
+    background: var(--crimson); color: var(--parchment);
+    font-size: 9px; font-weight: 700; letter-spacing: 0.14em;
+    padding: 5px 10px; border: 2px solid var(--ink);
+  }
+
+  .pricing-side { display: flex; flex-direction: column; gap: 22px; }
+  .side-card { padding: 30px 26px; text-align: center; }
+  .side-card svg { width: 52px; height: 52px; margin-bottom: 14px; }
+  .side-card h3 { font-size: 18px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 12px; }
+  .side-card p { font-size: 13.5px; line-height: 1.6; color: var(--ink-soft); margin: 0 0 20px; }
+  .side-card .btn { width: 100%; }
+  .contact-card { padding: 26px; background: var(--indigo); color: var(--parchment); border: 3px solid var(--ink); }
+  .contact-card h4 { font-family: 'Archivo', sans-serif; font-size: 10px; letter-spacing: 0.3em; text-transform: uppercase; color: #b9c3dd; margin-bottom: 12px; font-weight: 700; }
+  .contact-card p { font-size: 14px; line-height: 1.6; margin: 0; }
+  .contact-card b { letter-spacing: 0.06em; }
+
+  @media (min-width: 900px) {
+    .pricing-shell { grid-template-columns: 1.5fr 1fr; }
+  }
+
+  /* ── FAQ ─────────────────────────────── */
+  .faq-wrap { max-width: 760px; margin: 0 auto; display: flex; flex-direction: column; gap: 2px; }
+  .faq-item { border: 2px solid var(--ink); background: var(--parchment); }
+  .faq-item + .faq-item { border-top: none; }
+  .faq-item button {
+    width: 100%; display: flex; justify-content: space-between; align-items: center; gap: 16px;
+    background: none; border: none; text-align: left; cursor: pointer;
+    padding: 20px 22px; font-family: 'Cormorant Garamond', serif; font-size: 18px; font-weight: 600; color: var(--ink);
+  }
+  .faq-item .mark { font-family: 'Archivo', sans-serif; font-size: 18px; font-weight: 700; color: var(--crimson); transition: transform .25s var(--ease); flex-shrink: 0; }
+  .faq-item.open .mark { transform: rotate(45deg); }
+  .faq-answer { max-height: 0; overflow: hidden; transition: max-height .35s var(--ease); }
+  .faq-answer p { margin: 0; padding: 0 22px 22px; font-size: 14.5px; line-height: 1.65; color: var(--ink-soft); font-weight: 500; }
+
+  /* ── Contact / Footer ────────────────── */
+  .world-panel {
+    text-align: center; padding: 64px 32px;
+    background: var(--ink); color: var(--parchment);
+    border: 3px solid var(--ink); position: relative;
+  }
+  .world-panel .numeral { color: #d9a154; }
+  .world-panel h2 { color: var(--parchment); font-size: clamp(1.8rem, 4vw, 2.6rem); font-weight: 600; margin-top: 12px; }
+  .world-panel p { color: #c7bda6; max-width: 44ch; margin: 18px auto 30px; font-size: 15.5px; line-height: 1.6; }
+  .world-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; }
+  .world-links .btn-solid { border-color: var(--crimson-deep); }
+  .world-links .btn-line { border-color: var(--parchment); color: var(--parchment); }
+  .world-links .btn-line:hover { background: var(--parchment); color: var(--ink); }
+
+  footer {
+    padding: 34px 24px; text-align: center;
+    font-size: 10.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-soft);
+  }
+  footer .fdiv { width: 40px; height: 1px; background: var(--ink); margin: 0 auto 14px; }
+
+  /* ── WhatsApp float ──────────────────── */
+  .wa-float {
+    position: fixed; bottom: 26px; right: 26px; z-index: 90;
+    width: 58px; height: 58px; border-radius: 50%;
+    background: #25D366; color: #fff;
+    display: flex; align-items: center; justify-content: center;
+    border: 3px solid var(--ink);
+    box-shadow: 5px 5px 0 rgba(36,22,8,0.4);
+    transition: transform .2s var(--ease);
+  }
+  .wa-float:hover, .wa-float:focus-visible { transform: translateY(-3px) scale(1.05); }
+  .wa-float svg { width: 28px; height: 28px; }
+
+  .reveal { opacity: 0; transform: translateY(22px); transition: opacity .6s var(--ease), transform .6s var(--ease); }
+  .reveal.in { opacity: 1; transform: translateY(0); }
+
+  @media (prefers-reduced-motion: reduce) {
+    .hero-card { animation: none; opacity: 1; transform: rotate(-2.5deg); }
+    .reveal { opacity: 1; transform: none; transition: none; }
+    * { scroll-behavior: auto !important; }
+  }
+
+  :focus-visible { outline: 2px solid var(--crimson); outline-offset: 3px; }
 </style>
 </head>
-<body id="top" class="bg-background text-on-surface font-body selection:bg-primary/30">
+<body>
 
-<!-- TopNavBar -->
-<nav class="fixed top-0 w-full z-50 bg-black/60 backdrop-blur-2xl border-b border-white/5">
-  <div class="flex justify-between items-center px-6 md:px-8 h-20">
-    <div class="text-xl font-bold tracking-widest text-white font-headline">DEUSDETH <span class="text-primary/50 text-sm font-light">TAROT</span></div>
-    
-    <!-- Desktop nav -->
-    <div class="hidden md:flex items-center gap-12">
-      <a class="font-['Space_Grotesk'] tracking-[0.3em] uppercase text-[10px] text-cyan-400 border-b border-cyan-400/50 pb-1" href="#top">ARCANA</a>
-      <a class="font-['Space_Grotesk'] tracking-[0.3em] uppercase text-[10px] text-gray-500 hover:text-white transition-colors" href="#sobre">SOBRE</a>
-      <a class="font-['Space_Grotesk'] tracking-[0.3em] uppercase text-[10px] text-gray-500 hover:text-white transition-colors" href="#pricing">CONSULTAS</a>
-      <a class="font-['Space_Grotesk'] tracking-[0.3em] uppercase text-[10px] text-gray-500 hover:text-white transition-colors" href="#faq">FAQ</a>
-      <a class="font-['Space_Grotesk'] tracking-[0.3em] uppercase text-[10px] text-gray-500 hover:text-white transition-colors" href="#contact">CONTATO</a>
-    </div>
-    
-    <div class="flex items-center gap-4">
-      <a href="https://wa.me/5589981509164?text=Olá!+Quero+fazer+uma+consulta+de+tarot" class="hidden md:flex items-center justify-center bg-transparent border border-primary/40 text-primary px-8 py-2 font-['Space_Grotesk'] tracking-widest uppercase text-[10px] font-bold hover:bg-primary hover:text-on-primary transition-all active:scale-95 shadow-[0_0_15px_rgba(156,234,242,0.2)]">
-        RESERVAR
-      </a>
-      <!-- Hamburger button -->
-      <button id="hamburger" aria-label="Abrir menu" class="md:hidden flex flex-col gap-[5px] p-2">
-        <span class="ham-line block w-6 h-[2px] bg-white rounded-full"></span>
-        <span class="ham-line block w-6 h-[2px] bg-white rounded-full"></span>
-        <span class="ham-line block w-6 h-[2px] bg-white rounded-full"></span>
-      </button>
-    </div>
+<header class="nav">
+  <div class="nav-row">
+    <a href="#top" class="brand">Deusdeth<span>TAROT · CONSULTAS</span></a>
+    <nav class="nav-links">
+      <a href="#top">Início</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#pricing">Consultas</a>
+      <a href="#faq">Perguntas</a>
+    </nav>
+    <a href="https://wa.me/5589981509164?text=Olá!+Quero+fazer+uma+consulta+de+tarot" class="btn btn-solid nav-cta" target="_blank" rel="noopener noreferrer">Reservar</a>
+    <button id="hamburger" aria-label="Abrir menu" aria-expanded="false">
+      <span class="ham-line"></span><span class="ham-line"></span><span class="ham-line"></span>
+    </button>
+  </div>
+</header>
+
+<div id="mobile-menu">
+  <a href="#top" data-close>Início</a>
+  <a href="#sobre" data-close>Sobre</a>
+  <a href="#pricing" data-close>Consultas</a>
+  <a href="#faq" data-close>Perguntas</a>
+  <a href="https://wa.me/5589981509164?text=Olá!+Quero+fazer+uma+consulta+de+tarot" class="btn btn-solid" target="_blank" rel="noopener noreferrer">Reservar</a>
+</div>
+
+<main id="top">
+
+<section class="hero">
+  <div class="hero-card card-frame">
+    <span class="pip pip-tl"></span><span class="pip pip-tr"></span><span class="pip pip-bl"></span><span class="pip pip-br"></span>
+    <span class="numeral">0</span>
+    <svg viewBox="0 0 200 220" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <!-- sunburst -->
+      <g stroke="#241608" stroke-width="3" stroke-linecap="round">
+        <path d="M96 8 L96 22"/><path d="M74 15 L81 27"/><path d="M118 15 L111 27"/>
+        <path d="M60 30 L70 38"/><path d="M132 30 L122 38"/>
+      </g>
+      <circle cx="96" cy="34" r="11" fill="#9c2b21" stroke="#241608" stroke-width="3"/>
+      <!-- ground -->
+      <path d="M0 182 Q100 158 200 182 L200 220 L0 220 Z" fill="#a8781d" stroke="#241608" stroke-width="3"/>
+      <!-- bindle stick -->
+      <path d="M120 78 L150 54" stroke="#5a3d15" stroke-width="5" stroke-linecap="round"/>
+      <circle cx="152" cy="50" r="12" fill="#263a63" stroke="#241608" stroke-width="3"/>
+      <!-- cloak body -->
+      <path d="M70 190 L58 118 Q58 96 96 92 Q134 96 134 118 L122 190 Z" fill="#9c2b21" stroke="#241608" stroke-width="3.5" stroke-linejoin="round"/>
+      <path d="M96 92 L88 190" stroke="#241608" stroke-width="2" opacity="0.35"/>
+      <path d="M96 92 L104 190" stroke="#241608" stroke-width="2" opacity="0.35"/>
+      <!-- arm to bindle -->
+      <path d="M112 104 L128 82" stroke="#9c2b21" stroke-width="12" stroke-linecap="round"/>
+      <path d="M112 104 L128 82" stroke="#241608" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+      <!-- head -->
+      <circle cx="96" cy="70" r="20" fill="#f2e7cb" stroke="#241608" stroke-width="3.5"/>
+      <path d="M78 62 Q96 48 114 62 L114 58 Q96 44 78 58 Z" fill="#263a63" stroke="#241608" stroke-width="2.5"/>
+      <!-- front leg stepping off the cliff -->
+      <path d="M84 186 L64 210" stroke="#241608" stroke-width="8" stroke-linecap="round"/>
+      <path d="M112 188 L128 210" stroke="#241608" stroke-width="8" stroke-linecap="round"/>
+      <!-- little dog -->
+      <path d="M28 196 Q22 178 42 176 Q58 176 58 194 L58 202 Q40 208 28 202 Z" fill="#263a63" stroke="#241608" stroke-width="3" stroke-linejoin="round"/>
+      <path d="M44 176 L52 164 L54 178 Z" fill="#263a63" stroke="#241608" stroke-width="2.5" stroke-linejoin="round"/>
+      <path d="M18 190 Q8 184 10 174" stroke="#241608" stroke-width="4" stroke-linecap="round" fill="none"/>
+    </svg>
+    <span class="ribbon">O Louco</span>
   </div>
 
-  <!-- Mobile menu -->
-  <div id="mobile-menu" class="md:hidden bg-black/90 border-t border-white/5 px-6">
-    <div class="flex flex-col gap-0 py-4">
-      <a class="font-['Space_Grotesk'] tracking-[0.3em] uppercase text-[10px] text-cyan-400 py-4 border-b border-white/5" href="#top" onclick="closeMobileMenu()">ARCANA</a>
-      <a class="font-['Space_Grotesk'] tracking-[0.3em] uppercase text-[10px] text-gray-400 hover:text-white transition-colors py-4 border-b border-white/5" href="#sobre" onclick="closeMobileMenu()">SOBRE</a>
-      <a class="font-['Space_Grotesk'] tracking-[0.3em] uppercase text-[10px] text-gray-400 hover:text-white transition-colors py-4 border-b border-white/5" href="#pricing" onclick="closeMobileMenu()">CONSULTAS</a>
-      <a class="font-['Space_Grotesk'] tracking-[0.3em] uppercase text-[10px] text-gray-400 hover:text-white transition-colors py-4 border-b border-white/5" href="#faq" onclick="closeMobileMenu()">FAQ</a>
-      <a class="font-['Space_Grotesk'] tracking-[0.3em] uppercase text-[10px] text-gray-400 hover:text-white transition-colors py-4 border-b border-white/5" href="#contact" onclick="closeMobileMenu()">CONTATO</a>
-      <a href="https://wa.me/5589981509164?text=Olá!+Quero+fazer+uma+consulta+de+tarot" class="mt-4 flex items-center justify-center bg-primary text-on-primary py-4 font-['Space_Grotesk'] tracking-widest uppercase text-[10px] font-bold">
-        RESERVAR AGORA
-      </a>
-    </div>
-  </div>
-</nav>
-
-<main class="cyber-grid pt-20">
-
-<!-- Hero Section -->
-<section class="relative min-h-[95vh] flex flex-col justify-center items-center px-6 overflow-hidden">
-  <!-- Stars -->
-  <div id="stars-container" class="absolute inset-0 z-0 pointer-events-none"></div>
-
-  <div class="absolute inset-0 z-0 opacity-60">
-    <img alt="Lótus Etérea — flor luminescente abstrata com tentáculos neon" width="1920" height="1080" class="w-full h-full object-cover lotus-glow" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFSp0krgWqni7-rchbsSzNdBAk1gklg5EpTO75ggfc6x5ChouztBQiZ3memO78h29fG4tZ7tbeovakoX_1FRnC1wCJQajz02OnJjlL32qJ4MlFXTEIFB8IgjwhdFbYKhZEPWDdhdJB2yfLybtZKDWzT94ud_DqNXvTS7vAF2dySCp9neh3BAma8BKEX1Gwa0SGr_448ds9flyHNXGCaLRpICw6ukcSg6k0bB1gmTjwN9YTxIctbFjfC1lpyQC12Mk3Ez4qaR2NMQA"/>
-    <div class="absolute inset-0 bg-gradient-to-b from-background via-transparent to-background"></div>
-  </div>
-  <div class="relative z-10 text-center max-w-5xl">
-    <span class="font-label text-primary/80 tracking-[0.5em] text-[10px] mb-8 block">[ INICIALIZANDO INTERFACE ESPIRITUAL ]</span>
-    <h1 class="font-headline text-5xl md:text-8xl font-bold tracking-tighter leading-tight mb-8 drop-shadow-2xl">
-      Insights da <span class="text-primary italic ethereal-glow">Arcana.</span><br/>
-      Destino Revelado.
-    </h1>
-    <p class="font-body text-on-surface-variant text-lg md:text-xl max-w-2xl mx-auto mb-6 leading-relaxed font-light">
-      Uma abordagem analítica precisa aos antigos mistérios. Acesse inteligência de alto valor para a jornada da sua alma.
-    </p>
-    <p class="font-body text-on-surface-variant/60 text-sm max-w-xl mx-auto mb-14 leading-relaxed font-light">
-      Leituras 100% online via WhatsApp · Resposta rápida · A partir de <span class="text-primary font-semibold">R$ 2</span>
-    </p>
-    <div class="flex flex-wrap justify-center gap-6">
-      <a class="bg-primary text-on-primary px-12 py-5 font-label tracking-[0.2em] uppercase text-xs font-black shadow-[0_0_30px_rgba(156,234,242,0.4)] hover:shadow-[0_0_50px_rgba(156,234,242,0.6)] transition-all hover:-translate-y-1" href="#pricing">
-        VER CONSULTAS
-      </a>
-      <a class="bg-transparent border border-white/20 text-white/80 px-12 py-5 font-label tracking-[0.2em] uppercase text-xs font-bold hover:border-white/50 transition-all hover:-translate-y-1" href="#sobre">
-        SOBRE MIM
-      </a>
-    </div>
-  </div>
-  <!-- Floating Card Visuals -->
-  <div class="absolute right-[8%] top-[25%] w-44 h-64 glass-panel border border-primary/40 rounded-sm card-float flex flex-col items-center justify-center opacity-70 hidden lg:flex">
-    <div class="absolute inset-0 bg-gradient-to-tr from-primary/10 to-transparent"></div>
-    <span class="material-symbols-outlined text-primary text-5xl mb-4 ethereal-glow">auto_awesome</span>
-    <div class="w-12 h-[1px] bg-primary/30"></div>
-  </div>
-  <div class="absolute left-[10%] bottom-[20%] w-44 h-64 glass-panel border border-primary/40 rounded-sm card-float-reverse flex flex-col items-center justify-center opacity-70 hidden lg:flex">
-    <div class="absolute inset-0 bg-gradient-to-bl from-primary/10 to-transparent"></div>
-    <span class="material-symbols-outlined text-primary text-5xl mb-4 ethereal-glow">visibility</span>
-    <div class="w-12 h-[1px] bg-primary/30"></div>
+  <h1>Um passo além do que <em>os olhos veem.</em></h1>
+  <p>Leituras de tarot diretas e objetivas, sem enrolação, pra você decidir com mais clareza sobre amor, trabalho e os próximos passos.</p>
+  <p class="price-note">100% pelo WhatsApp · resposta rápida · a partir de <b>R$ 2</b></p>
+  <div class="actions">
+    <a href="#pricing" class="btn btn-solid">Ver consultas</a>
+    <a href="#sobre" class="btn btn-line">Sobre mim</a>
   </div>
 </section>
 
-<!-- Sobre Mim Section -->
-<section id="sobre" class="py-32 px-6 max-w-7xl mx-auto relative">
-  <div class="absolute top-0 left-1/2 -translate-x-1/2 w-1/2 h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent"></div>
-  <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-    <div>
-      <span class="font-label text-primary/60 text-[10px] tracking-[0.4em] uppercase block mb-6">[ PROTOCOLO DE IDENTIFICAÇÃO ]</span>
-      <h2 class="font-headline text-3xl md:text-5xl font-bold mb-8 leading-tight">O Cartomante<br/><span class="text-primary">por trás do Véu</span></h2>
-      <p class="font-body text-on-surface-variant text-base leading-relaxed mb-6 font-light">
-        Sou DEUSDETH, tarotista com foco em leituras analíticas e interpretações profundas. Utilizo o Tarot como ferramenta de autoconhecimento e tomada de decisão, combinando a sabedoria dos arcanos com uma abordagem objetiva e direta.
-      </p>
-      <p class="font-body text-on-surface-variant text-base leading-relaxed mb-10 font-light">
-        Meu objetivo é fornecer insights claros e acionáveis para que você possa navegar os desafios da vida com mais clareza, confiança e propósito.
-      </p>
-      <div class="flex flex-wrap gap-4">
-        <div class="px-4 py-2 border border-primary/30 bg-primary/5">
-          <span class="font-label text-primary text-xs tracking-widest uppercase">Leituras Online</span>
-        </div>
-        <div class="px-4 py-2 border border-white/10 bg-white/5">
-          <span class="font-label text-on-surface-variant text-xs tracking-widest uppercase">Via WhatsApp</span>
-        </div>
-        <div class="px-4 py-2 border border-white/10 bg-white/5">
-          <span class="font-label text-on-surface-variant text-xs tracking-widest uppercase">Resposta Rápida</span>
+<section id="sobre">
+  <div class="wrap">
+    <div class="sobre-grid reveal">
+      <div>
+        <span class="eyebrow"><span class="numeral">I</span> — O Mago</span>
+        <h2 style="font-size:clamp(1.7rem,3.4vw,2.4rem); font-weight:600; margin:10px 0 22px; text-transform:none;">O cartomante por trás do véu</h2>
+        <p>Sou DEUSDETH, tarotista com foco em leituras analíticas e interpretações profundas. Uso o tarot como ferramenta de autoconhecimento e tomada de decisão, unindo a sabedoria dos arcanos a uma abordagem objetiva e direta.</p>
+        <p>Meu objetivo é te dar respostas claras e práticas pra você atravessar os desafios da vida com mais confiança e propósito — sem rodeio, sem promessa vazia.</p>
+        <div class="traits">
+          <span class="trait">Leituras online</span>
+          <span class="trait">Via WhatsApp</span>
+          <span class="trait">Resposta rápida</span>
         </div>
       </div>
+      <div class="mago-card card-frame">
+        <span class="pip pip-tl"></span><span class="pip pip-tr"></span><span class="pip pip-bl"></span><span class="pip pip-br"></span>
+        <svg viewBox="0 0 100 100" aria-hidden="true">
+          <rect x="20" y="70" width="60" height="8" fill="#241608"/>
+          <path d="M50 12 L58 30 L50 48 L42 30 Z" fill="#9c2b21" stroke="#241608" stroke-width="2"/>
+          <circle cx="50" cy="52" r="16" fill="none" stroke="#241608" stroke-width="3"/>
+          <path d="M50 52 L58 40 M50 52 L38 48 M50 52 L58 62" stroke="#263a63" stroke-width="2.5" stroke-linecap="round"/>
+        </svg>
+        <h3>Como eu leio</h3>
+        <ul class="checklist">
+          <li>Leituras rápidas e precisas</li>
+          <li>Abordagem analítica e objetiva</li>
+          <li>Total privacidade e sigilo</li>
+          <li>Atendimento todos os dias</li>
+        </ul>
+      </div>
     </div>
-    <div class="relative flex justify-center">
-      <div class="glass-panel border border-primary/20 p-10 text-center relative overflow-hidden max-w-sm w-full">
-        <div class="absolute top-0 left-0 w-32 h-32 bg-primary/5 blur-3xl rounded-full -translate-x-1/2 -translate-y-1/2"></div>
-        <div class="absolute bottom-0 right-0 w-32 h-32 bg-tertiary/5 blur-3xl rounded-full translate-x-1/2 translate-y-1/2"></div>
-        <span class="material-symbols-outlined text-primary text-6xl mb-6 ethereal-glow block">my_location</span>
-        <div class="space-y-4">
-          <div class="flex items-center gap-3 text-left">
-            <span class="material-symbols-outlined text-primary text-base">check_circle</span>
-            <span class="font-body text-sm text-on-surface-variant">Leituras rápidas e precisas</span>
-          </div>
-          <div class="flex items-center gap-3 text-left">
-            <span class="material-symbols-outlined text-primary text-base">check_circle</span>
-            <span class="font-body text-sm text-on-surface-variant">Abordagem analítica e objetiva</span>
-          </div>
-          <div class="flex items-center gap-3 text-left">
-            <span class="material-symbols-outlined text-primary text-base">check_circle</span>
-            <span class="font-body text-sm text-on-surface-variant">Total privacidade e sigilo</span>
-          </div>
-          <div class="flex items-center gap-3 text-left">
-            <span class="material-symbols-outlined text-primary text-base">check_circle</span>
-            <span class="font-body text-sm text-on-surface-variant">Atendimento todos os dias</span>
-          </div>
+  </div>
+</section>
+
+<section id="pricing" style="background:var(--parchment-dim); border-top:3px solid var(--ink); border-bottom:3px solid var(--ink);">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="numeral">X</span>
+      <h2>A Roda da Fortuna</h2>
+      <p class="eyebrow" style="margin-top:10px;">Tabela de consultas</p>
+      <div class="rule"></div>
+    </div>
+
+    <div class="pricing-shell">
+      <div class="price-list reveal">
+        <a class="price-row" href="https://wa.me/5589981509164?text=Olá!+Quero+uma+Pergunta+de+Sim+ou+Não+(R$2)" target="_blank" rel="noopener noreferrer">
+          <span><span class="name">Pergunta de sim ou não</span><span class="desc">Resposta direta</span></span>
+          <span class="amount">R$ 2</span>
+        </a>
+        <a class="price-row" href="https://wa.me/5589981509164?text=Olá!+Quero+uma+consulta+de+Perguntas+Objetivas+(R$5)" target="_blank" rel="noopener noreferrer">
+          <span><span class="name">Pergunta objetiva</span><span class="desc">1 pergunta objetiva</span></span>
+          <span class="amount">R$ 5</span>
+        </a>
+        <a class="price-row" href="https://wa.me/5589981509164?text=Olá!+Quero+uma+Pergunta+Aprofundada+(R$8)" target="_blank" rel="noopener noreferrer">
+          <span><span class="name">Pergunta aprofundada</span><span class="desc">Análise detalhada</span></span>
+          <span class="amount">R$ 8</span>
+        </a>
+        <a class="price-row" href="https://wa.me/5589981509164?text=Olá!+Quero+3+Perguntas+Objetivas+(R$12)" target="_blank" rel="noopener noreferrer">
+          <span><span class="name">3 perguntas objetivas</span><span class="desc">Pacote econômico</span></span>
+          <span class="amount">R$ 12</span>
+        </a>
+        <a class="price-row" href="https://wa.me/5589981509164?text=Olá!+Quero+2+Perguntas+Aprofundadas+(R$15)" target="_blank" rel="noopener noreferrer">
+          <span><span class="name">2 perguntas aprofundadas</span><span class="desc">Dupla análise</span></span>
+          <span class="amount">R$ 15</span>
+        </a>
+        <a class="price-row" href="https://wa.me/5589981509164?text=Olá!+Quero+3+Perguntas+Aprofundadas+(R$20)" target="_blank" rel="noopener noreferrer">
+          <span><span class="name">3 perguntas aprofundadas</span><span class="desc">Maior custo-benefício</span></span>
+          <span class="amount">R$ 20</span>
+        </a>
+        <a class="price-row featured" href="https://wa.me/5589981509164?text=Olá!+Tenho+interesse+na+Leitura+Mensal+(R$35)" target="_blank" rel="noopener noreferrer">
+          <span class="seal">Destaque</span>
+          <span><span class="name">Leitura mensal</span><span class="desc">Visão completa do mês</span></span>
+          <span class="amount">R$ 35</span>
+        </a>
+      </div>
+
+      <div class="pricing-side reveal">
+        <div class="side-card card-frame">
+          <span class="pip pip-tl"></span><span class="pip pip-tr"></span><span class="pip pip-bl"></span><span class="pip pip-br"></span>
+          <svg viewBox="0 0 100 100" aria-hidden="true">
+            <rect x="22" y="30" width="56" height="46" rx="2" fill="none" stroke="#241608" stroke-width="3"/>
+            <path d="M32 30 V22 a18 18 0 0 1 36 0 V30" fill="none" stroke="#241608" stroke-width="3"/>
+            <circle cx="50" cy="52" r="6" fill="#9c2b21"/>
+          </svg>
+          <h3>Canal seguro</h3>
+          <p>Toda consulta é feita direto pelo WhatsApp. Suas perguntas e respostas ficam só entre nós dois.</p>
+          <a href="https://wa.me/5589981509164?text=Olá!+Quero+fazer+uma+consulta+de+tarot" class="btn btn-solid" target="_blank" rel="noopener noreferrer">Agendar via WhatsApp</a>
+        </div>
+        <div class="contact-card">
+          <h4>Protocolo de contato</h4>
+          <p>Atendimento todos os dias, com horário combinado.<br/>WhatsApp: <b>(89) 98150-9164</b></p>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Pricing Section -->
-<section class="py-32 px-6 max-w-7xl mx-auto relative" id="pricing">
-  <div class="absolute top-0 left-1/2 -translate-x-1/2 w-1/2 h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent"></div>
-  <div class="mb-20 text-center">
-    <h2 class="font-headline text-3xl md:text-4xl font-bold mb-4 uppercase tracking-widest">TABELA DE SERVIÇOS</h2>
-    <p class="font-label text-primary/60 text-[10px] tracking-[0.4em] uppercase">[ TAXAS DE CÂMBIO PARA DADOS ESPIRITUAIS ]</p>
-  </div>
-  <div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
-    <div class="lg:col-span-8">
-      <div class="space-y-1">
-        <!-- Table Row 1 -->
-        <a href="https://wa.me/5589981509164?text=Olá!+Quero+uma+consulta+de+Perguntas+Objetivas+(R$5)" class="flex justify-between items-center p-6 md:p-8 border border-transparent border-b-white/5 hover:border-primary/50 hover:bg-primary/[0.04] hover:shadow-[0_0_20px_rgba(156,234,242,0.15)] transition-all duration-300 group rounded-sm cursor-pointer">
-          <div>
-            <span class="font-body text-lg text-on-surface/90 font-light tracking-wide block">Perguntas Objetivas</span>
-            <span class="font-label text-[10px] text-on-surface-variant/50 tracking-widest uppercase">1 pergunta objetiva</span>
-          </div>
-          <div class="flex items-center gap-4">
-            <span class="font-label text-primary text-xl font-bold tracking-tighter">R$ 5</span>
-            <span class="material-symbols-outlined text-primary/0 group-hover:text-primary/60 text-base transition-all">arrow_forward</span>
-          </div>
-        </a>
-        <!-- Table Row 2 -->
-        <a href="https://wa.me/5589981509164?text=Olá!+Quero+uma+Pergunta+Aprofundada+(R$8)" class="flex justify-between items-center p-6 md:p-8 border border-transparent border-b-white/5 hover:border-primary/50 hover:bg-primary/[0.04] hover:shadow-[0_0_20px_rgba(156,234,242,0.15)] transition-all duration-300 group rounded-sm cursor-pointer">
-          <div>
-            <span class="font-body text-lg text-on-surface/90 font-light tracking-wide block">Pergunta Aprofundada</span>
-            <span class="font-label text-[10px] text-on-surface-variant/50 tracking-widest uppercase">análise detalhada</span>
-          </div>
-          <div class="flex items-center gap-4">
-            <span class="font-label text-primary text-xl font-bold tracking-tighter">R$ 8</span>
-            <span class="material-symbols-outlined text-primary/0 group-hover:text-primary/60 text-base transition-all">arrow_forward</span>
-          </div>
-        </a>
-        <!-- Table Row 3 -->
-        <a href="https://wa.me/5589981509164?text=Olá!+Quero+3+Perguntas+Objetivas+(R$12)" class="flex justify-between items-center p-6 md:p-8 border border-transparent border-b-white/5 hover:border-primary/50 hover:bg-primary/[0.04] hover:shadow-[0_0_20px_rgba(156,234,242,0.15)] transition-all duration-300 group rounded-sm cursor-pointer">
-          <div>
-            <span class="font-body text-lg text-on-surface/90 font-light tracking-wide block">3 Perguntas Objetivas</span>
-            <span class="font-label text-[10px] text-on-surface-variant/50 tracking-widest uppercase">pacote econômico</span>
-          </div>
-          <div class="flex items-center gap-4">
-            <span class="font-label text-secondary text-xl font-bold tracking-tighter">R$ 12</span>
-            <span class="material-symbols-outlined text-primary/0 group-hover:text-primary/60 text-base transition-all">arrow_forward</span>
-          </div>
-        </a>
-        <!-- Table Row 4 -->
-        <a href="https://wa.me/5589981509164?text=Olá!+Quero+2+Perguntas+Aprofundadas+(R$15)" class="flex justify-between items-center p-6 md:p-8 border border-transparent border-b-white/5 hover:border-primary/50 hover:bg-primary/[0.04] hover:shadow-[0_0_20px_rgba(156,234,242,0.15)] transition-all duration-300 group rounded-sm cursor-pointer">
-          <div>
-            <span class="font-body text-lg text-on-surface/90 font-light tracking-wide block">2 Perguntas Aprofundadas</span>
-            <span class="font-label text-[10px] text-on-surface-variant/50 tracking-widest uppercase">dupla análise</span>
-          </div>
-          <div class="flex items-center gap-4">
-            <span class="font-label text-primary text-xl font-bold tracking-tighter">R$ 15</span>
-            <span class="material-symbols-outlined text-primary/0 group-hover:text-primary/60 text-base transition-all">arrow_forward</span>
-          </div>
-        </a>
-        <!-- Table Row 5 -->
-        <a href="https://wa.me/5589981509164?text=Olá!+Quero+3+Perguntas+Aprofundadas+(R$20)" class="flex justify-between items-center p-6 md:p-8 border border-transparent border-b-white/5 hover:border-primary/50 hover:bg-primary/[0.04] hover:shadow-[0_0_20px_rgba(156,234,242,0.15)] transition-all duration-300 group rounded-sm cursor-pointer">
-          <div>
-            <span class="font-body text-lg text-on-surface/90 font-light tracking-wide block">3 Perguntas Aprofundadas</span>
-            <span class="font-label text-[10px] text-on-surface-variant/50 tracking-widest uppercase">maior custo-benefício</span>
-          </div>
-          <div class="flex items-center gap-4">
-            <span class="font-label text-primary text-xl font-bold tracking-tighter">R$ 20</span>
-            <span class="material-symbols-outlined text-primary/0 group-hover:text-primary/60 text-base transition-all">arrow_forward</span>
-          </div>
-        </a>
-        <!-- Table Row 6 -->
-        <a href="https://wa.me/5589981509164?text=Olá!+Quero+uma+Pergunta+de+Sim+ou+Não+(R$2)" class="flex justify-between items-center p-6 md:p-8 border border-transparent border-b-white/5 hover:border-primary/50 hover:bg-primary/[0.04] hover:shadow-[0_0_20px_rgba(156,234,242,0.15)] transition-all duration-300 group rounded-sm cursor-pointer">
-          <div>
-            <span class="font-body text-lg text-on-surface/90 font-light tracking-wide block">Pergunta de Sim ou Não</span>
-            <span class="font-label text-[10px] text-on-surface-variant/50 tracking-widest uppercase">resposta direta</span>
-          </div>
-          <div class="flex items-center gap-4">
-            <span class="font-label text-primary text-xl font-bold tracking-tighter">R$ 2</span>
-            <span class="material-symbols-outlined text-primary/0 group-hover:text-primary/60 text-base transition-all">arrow_forward</span>
-          </div>
-        </a>
-        <!-- Special Row -->
-        <a href="https://wa.me/5589981509164?text=Olá!+Tenho+interesse+na+Leitura+Mensal+(R$35)" class="flex justify-between items-center p-6 md:p-8 border border-primary/20 bg-primary/5 hover:border-primary/50 hover:bg-primary/[0.08] hover:shadow-[0_0_20px_rgba(156,234,242,0.15)] transition-all duration-300 group rounded-sm cursor-pointer mt-6 relative overflow-hidden">
-          <div class="absolute top-2 right-16 md:right-24">
-            <span class="font-label text-[8px] tracking-widest uppercase text-on-primary bg-primary px-2 py-1">DESTAQUE</span>
-          </div>
-          <div>
-            <span class="font-body text-lg text-on-surface/90 font-light tracking-wide block">Leitura Mensal</span>
-            <span class="font-label text-[10px] text-on-surface-variant/50 tracking-widest uppercase">visão completa do mês</span>
-          </div>
-          <div class="flex items-center gap-4">
-            <span class="font-label text-primary text-xl font-bold tracking-tighter">R$ 35</span>
-            <span class="material-symbols-outlined text-primary/40 group-hover:text-primary/80 text-base transition-all">arrow_forward</span>
-          </div>
-        </a>
-      </div>
+<section id="faq">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="numeral">XVII</span>
+      <h2>A Estrela</h2>
+      <p class="eyebrow" style="margin-top:10px;">Perguntas frequentes</p>
+      <div class="rule"></div>
     </div>
-    <div class="lg:col-span-4 flex flex-col gap-10">
-      <div class="glass-panel p-10 border border-white/10 flex flex-col items-center text-center relative overflow-hidden">
-        <div class="absolute top-0 right-0 w-24 h-24 bg-primary/5 blur-3xl rounded-full"></div>
-        <span class="material-symbols-outlined text-primary text-5xl mb-8 ethereal-glow">encrypted</span>
-        <h3 class="font-headline text-xl mb-4 tracking-widest uppercase">Canal Seguro</h3>
-        <p class="font-body text-sm text-on-surface-variant mb-10 leading-relaxed font-light">
-          Todas as leituras são realizadas através de um link espiritual criptografado. Seus dados permanecem privados no registro cósmico.
-        </p>
-        <a class="w-full bg-white text-black py-5 font-label text-[10px] tracking-[0.3em] font-black uppercase hover:bg-primary transition-all shadow-xl" href="https://wa.me/5589981509164?text=Olá!+Quero+fazer+uma+consulta+de+tarot">
-          AGENDAR VIA WHATSAPP
-        </a>
+
+    <div class="faq-wrap reveal">
+      <div class="faq-item">
+        <button aria-expanded="false">Como funciona a consulta?<span class="mark">+</span></button>
+        <div class="faq-answer"><p>É simples: depois do pagamento pelo WhatsApp, você me manda sua pergunta. Faço a leitura das cartas e envio a interpretação completa por mensagem, explicando cada carta e o que ela representa pra sua situação.</p></div>
       </div>
-      <div class="p-10 bg-black/40 border-l border-primary/40 backdrop-blur-md" id="contact">
-        <h4 class="font-label text-primary/70 text-[9px] tracking-[0.4em] mb-6 uppercase">[ PROTOCOLOS DE ACESSO ]</h4>
-        <p class="font-body text-sm text-on-surface-variant leading-relaxed font-light">
-          Atendimento todos os dias com horário marcado.<br/>
-          WhatsApp: <span class="text-on-surface font-bold tracking-widest">89 98150-9164</span>
-        </p>
+      <div class="faq-item">
+        <button aria-expanded="false">Quanto tempo demora pra receber a leitura?<span class="mark">+</span></button>
+        <div class="faq-answer"><p>Varia com o tipo de consulta. Perguntas de sim/não e objetivas costumam ter resposta em algumas horas. Leituras aprofundadas e mensais podem levar até 24h. Sempre aviso o prazo no momento do agendamento.</p></div>
+      </div>
+      <div class="faq-item">
+        <button aria-expanded="false">Como é feito o pagamento?<span class="mark">+</span></button>
+        <div class="faq-answer"><p>Por PIX, antes da leitura. Depois do contato no WhatsApp, envio a chave PIX e espero a confirmação do pagamento pra começar a consulta.</p></div>
+      </div>
+      <div class="faq-item">
+        <button aria-expanded="false">Meus dados ficam seguros?<span class="mark">+</span></button>
+        <div class="faq-answer"><p>Sim, com total sigilo. Suas perguntas e respostas nunca são compartilhadas com terceiros.</p></div>
+      </div>
+      <div class="faq-item">
+        <button aria-expanded="false">Posso fazer qualquer tipo de pergunta?<span class="mark">+</span></button>
+        <div class="faq-answer"><p>O tarot funciona melhor com perguntas abertas sobre amor, trabalho, finanças, decisões de vida, relacionamentos e autoconhecimento. Não faço previsões sobre morte, terceiros sem consentimento, nem diagnósticos médicos.</p></div>
       </div>
     </div>
   </div>
 </section>
 
-
-<!-- FAQ Section -->
-<section id="faq" class="py-32 px-6 max-w-4xl mx-auto relative">
-  <div class="absolute top-0 left-1/2 -translate-x-1/2 w-1/2 h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent"></div>
-  <div class="mb-20 text-center">
-    <h2 class="font-headline text-3xl md:text-4xl font-bold mb-4 uppercase tracking-widest">PERGUNTAS FREQUENTES</h2>
-    <p class="font-label text-primary/60 text-[10px] tracking-[0.4em] uppercase">[ BANCO DE DADOS ESPIRITUAIS ]</p>
-  </div>
-  <div class="space-y-2">
-    <!-- FAQ Item 1 -->
-    <div class="faq-item border border-white/5 hover:border-primary/20 transition-all duration-300">
-      <button onclick="toggleFaq(this)" class="w-full flex justify-between items-center p-6 text-left cursor-pointer">
-        <span class="font-body text-base text-on-surface/90 font-light">Como funciona a consulta?</span>
-        <span class="material-symbols-outlined text-primary/60 text-xl transition-transform duration-300 faq-icon flex-shrink-0">add</span>
-      </button>
-      <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300">
-        <p class="font-body text-sm text-on-surface-variant leading-relaxed font-light px-6 pb-6">
-          É simples! Após o pagamento via WhatsApp, você me envia sua pergunta. Faço a leitura das cartas e envio a interpretação completa por mensagem, com a explicação de cada carta e o que ele representa para sua situação.
-        </p>
-      </div>
-    </div>
-    <!-- FAQ Item 2 -->
-    <div class="faq-item border border-white/5 hover:border-primary/20 transition-all duration-300">
-      <button onclick="toggleFaq(this)" class="w-full flex justify-between items-center p-6 text-left cursor-pointer">
-        <span class="font-body text-base text-on-surface/90 font-light">Quanto tempo demora para receber a leitura?</span>
-        <span class="material-symbols-outlined text-primary/60 text-xl transition-transform duration-300 faq-icon flex-shrink-0">add</span>
-      </button>
-      <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300">
-        <p class="font-body text-sm text-on-surface-variant leading-relaxed font-light px-6 pb-6">
-          O prazo varia conforme o tipo de consulta. Perguntas de sim/não e perguntas objetivas costumam ter resposta em até algumas horas. Leituras aprofundadas e mensais podem levar até 24h. Sempre informo o prazo no momento do agendamento.
-        </p>
-      </div>
-    </div>
-    <!-- FAQ Item 3 -->
-    <div class="faq-item border border-white/5 hover:border-primary/20 transition-all duration-300">
-      <button onclick="toggleFaq(this)" class="w-full flex justify-between items-center p-6 text-left cursor-pointer">
-        <span class="font-body text-base text-on-surface/90 font-light">Como é feito o pagamento?</span>
-        <span class="material-symbols-outlined text-primary/60 text-xl transition-transform duration-300 faq-icon flex-shrink-0">add</span>
-      </button>
-      <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300">
-        <p class="font-body text-sm text-on-surface-variant leading-relaxed font-light px-6 pb-6">
-          O pagamento é feito via PIX antes da realização da leitura. Após o contato no WhatsApp, envio a chave PIX e aguardo a confirmação do pagamento para iniciar a consulta.
-        </p>
-      </div>
-    </div>
-    <!-- FAQ Item 4 -->
-    <div class="faq-item border border-white/5 hover:border-primary/20 transition-all duration-300">
-      <button onclick="toggleFaq(this)" class="w-full flex justify-between items-center p-6 text-left cursor-pointer">
-        <span class="font-body text-base text-on-surface/90 font-light">Meus dados ficam seguros?</span>
-        <span class="material-symbols-outlined text-primary/60 text-xl transition-transform duration-300 faq-icon flex-shrink-0">add</span>
-      </button>
-      <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300">
-        <p class="font-body text-sm text-on-surface-variant leading-relaxed font-light px-6 pb-6">
-          Sim, absolutamente. Todas as conversas são tratadas com total sigilo e confidencialidade. Suas perguntas e respostas nunca são compartilhadas com terceiros.
-        </p>
-      </div>
-    </div>
-    <!-- FAQ Item 5 -->
-    <div class="faq-item border border-white/5 hover:border-primary/20 transition-all duration-300">
-      <button onclick="toggleFaq(this)" class="w-full flex justify-between items-center p-6 text-left cursor-pointer">
-        <span class="font-body text-base text-on-surface/90 font-light">Posso fazer qualquer tipo de pergunta?</span>
-        <span class="material-symbols-outlined text-primary/60 text-xl transition-transform duration-300 faq-icon flex-shrink-0">add</span>
-      </button>
-      <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300">
-        <p class="font-body text-sm text-on-surface-variant leading-relaxed font-light px-6 pb-6">
-          O tarot funciona melhor com perguntas abertas sobre amor, trabalho, finanças, decisões de vida, relacionamentos e autoconhecimento. Não realizo previsões sobre morte, terceiros sem consentimento, ou diagnósticos médicos.
-        </p>
+<section id="contact">
+  <div class="wrap">
+    <div class="world-panel reveal">
+      <span class="numeral">XXI</span>
+      <h2>O Mundo</h2>
+      <p>Toda jornada tem um ponto de chegada. Se você tem uma pergunta pra fazer aos arcanos, me chama e vamos conversar.</p>
+      <div class="world-links">
+        <a href="https://wa.me/5589981509164?text=Olá!+Quero+fazer+uma+consulta+de+tarot" class="btn btn-solid" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+        <a href="https://www.instagram.com/detwit/" class="btn btn-line" target="_blank" rel="noopener noreferrer">Instagram</a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Asymmetric Visual Break -->
-<section class="py-12 flex justify-center items-center">
-  <div class="w-full h-px bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
-</section>
-
-<!-- Footer -->
-<footer class="w-full py-20 border-t border-white/5 bg-black/80">
-  <div class="flex flex-col items-center gap-8 w-full max-w-7xl mx-auto px-6">
-    <div class="text-xl font-black text-white font-headline tracking-[0.5em]">DEUSDETH</div>
-    <div class="flex flex-wrap justify-center gap-8 md:gap-14">
-      <a class="font-['Space_Grotesk'] text-[9px] tracking-[0.4em] text-gray-600 hover:text-cyan-400 transition-colors uppercase" href="https://www.instagram.com/detwit/" target="_blank" rel="noopener noreferrer">INSTAGRAM</a>
-      <a class="font-['Space_Grotesk'] text-[9px] tracking-[0.4em] text-gray-600 hover:text-cyan-400 transition-colors uppercase" href="https://wa.me/5589981509164?text=Olá!+Quero+fazer+uma+consulta+de+tarot" target="_blank" rel="noopener noreferrer">WHATSAPP</a>
-      <span class="font-['Space_Grotesk'] text-[9px] tracking-[0.4em] text-gray-600 uppercase">PRIVACIDADE</span>
-    </div>
-    <div class="mt-8 font-['Space_Grotesk'] text-[9px] tracking-[0.3em] text-gray-700 uppercase">
-      © DEUSDETH. TODOS OS DIREITOS RESERVADOS.
-    </div>
-  </div>
-</footer>
 </main>
 
-<!-- Botão Flutuante do WhatsApp -->
-<a href="https://wa.me/5589981509164?text=Olá!+Quero+fazer+uma+consulta+de+tarot" target="_blank" rel="noopener noreferrer" 
-   class="fixed bottom-8 right-8 z-[100] flex items-center justify-center w-14 h-14 bg-[#25D366] text-white rounded-full shadow-[0_4px_20px_rgba(37,211,102,0.4)] hover:scale-110 hover:shadow-[0_4px_25px_rgba(37,211,102,0.6)] transition-all duration-300 group">
-  <svg viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8">
+<footer>
+  <div class="fdiv"></div>
+  © Deusdeth Tarot · Todos os direitos reservados
+</footer>
+
+<a href="https://wa.me/5589981509164?text=Olá!+Quero+fazer+uma+consulta+de+tarot" target="_blank" rel="noopener noreferrer" class="wa-float" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor">
     <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824zm-3.423-14.416c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm.029 18.88c-1.161 0-2.305-.292-3.318-.844l-3.677.964.984-3.595c-.607-1.052-.927-2.277-.926-3.541 0-3.825 3.113-6.937 6.937-6.937 3.825-.001 6.938 3.113 6.939 6.938.001 3.824-3.113 6.936-6.939 6.936z"/>
   </svg>
 </a>
 
 <script>
-  // ── Mobile Menu ──
   const hamburger = document.getElementById('hamburger');
   const mobileMenu = document.getElementById('mobile-menu');
-
   hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle('open');
+    const open = hamburger.classList.toggle('open');
     mobileMenu.classList.toggle('open');
+    hamburger.setAttribute('aria-expanded', open);
+    document.body.style.overflow = open ? 'hidden' : '';
   });
-
-  function closeMobileMenu() {
+  mobileMenu.querySelectorAll('[data-close]').forEach(a => a.addEventListener('click', () => {
     hamburger.classList.remove('open');
     mobileMenu.classList.remove('open');
-  }
+    hamburger.setAttribute('aria-expanded', false);
+    document.body.style.overflow = '';
+  }));
 
-  // Close menu when clicking outside
-  document.addEventListener('click', (e) => {
-    if (!hamburger.contains(e.target) && !mobileMenu.contains(e.target)) {
-      closeMobileMenu();
-    }
+  document.querySelectorAll('.faq-item button').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.closest('.faq-item');
+      const answer = item.querySelector('.faq-answer');
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i => {
+        i.classList.remove('open');
+        i.querySelector('.faq-answer').style.maxHeight = null;
+        i.querySelector('button').setAttribute('aria-expanded', false);
+      });
+      if (!isOpen) {
+        item.classList.add('open');
+        answer.style.maxHeight = answer.scrollHeight + 'px';
+        btn.setAttribute('aria-expanded', true);
+      }
+    });
   });
 
-  // ── FAQ Accordion ──
-  function toggleFaq(button) {
-    const item = button.closest('.faq-item');
-    const answer = item.querySelector('.faq-answer');
-    const icon = button.querySelector('.faq-icon');
-    const isOpen = answer.style.maxHeight && answer.style.maxHeight !== '0px';
-
-    // Close all
-    document.querySelectorAll('.faq-answer').forEach(a => { a.style.maxHeight = '0px'; });
-    document.querySelectorAll('.faq-icon').forEach(i => { i.textContent = 'add'; i.style.transform = 'rotate(0deg)'; });
-
-    // Open clicked if was closed
-    if (!isOpen) {
-      answer.style.maxHeight = answer.scrollHeight + 'px';
-      icon.textContent = 'remove';
-      icon.style.transform = 'rotate(0deg)';
-    }
-  }
-
-  // ── Stars Background ──
-  const starsContainer = document.getElementById('stars-container');
-  for (let i = 0; i < 80; i++) {
-    const star = document.createElement('div');
-    star.classList.add('star');
-    const size = Math.random() * 2 + 0.5;
-    star.style.cssText = `
-      width: ${size}px;
-      height: ${size}px;
-      top: ${Math.random() * 100}%;
-      left: ${Math.random() * 100}%;
-      --duration: ${Math.random() * 4 + 2}s;
-      --max-opacity: ${Math.random() * 0.4 + 0.1};
-      animation-delay: ${Math.random() * 5}s;
-    `;
-    starsContainer.appendChild(star);
+  const revealEls = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { threshold: 0.15 });
+    revealEls.forEach(el => io.observe(el));
+  } else {
+    revealEls.forEach(el => el.classList.add('in'));
   }
 </script>
 </body>
